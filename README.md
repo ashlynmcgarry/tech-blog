@@ -23,11 +23,11 @@ To start the open the shell and run the database, run 'psql -U postgres' in the 
 
 To seed the database with data, enter 'npm run seeds' in the VS Code's terminal.
 
+To start the server, run npm start in VS Code.
+
 ## Usage
 
-This generator can be used by entering 'npm start' within VS Code's terminal and then making API calls within Insomnia
-
-[Visit the live site here.]()
+[Visit the live site here.](https://tech-blog-7qmt.onrender.com)
 
 ## License
 
