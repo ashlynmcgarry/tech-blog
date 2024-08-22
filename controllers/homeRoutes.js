@@ -62,6 +62,21 @@ router.get('/newpost', (req, res) => { //this is the browser link
     res.render('newpost'); //this is the handlebar that we're rendering
 });
 
+router.get('/dashboard', withAuth, async (req, res) => {
+    try {
+        const postData = await Post.findAll({
+            where:{
+                user_id: req.session.user_id,
+            },
+        });
+        const posts = postData.map((post) => post.get({ plain:true }));
+        console.log(posts);
+        res.render('dashboard', {posts, logged_in: req.session.logged_in });
+    } catch (err) {
+        res.status(500).json(err);
+    }
+})
+
 //add comment route
 router.get('/comment', (req, res) => {
     if (!req.session.logged_in) {
