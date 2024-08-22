@@ -1,0 +1,14 @@
+[
+    {
+        "title": "Why use MVC",
+        "body": "MVC allows developers to maintain separation of concerns."
+    },
+    {
+        "title": "Object-Relational Mapping",
+        "body": "I have really loved learning about ORMs, it's really simplified the way I create querires in SQL."
+    },
+    {
+        "title": "Authentication vs Authorisation",
+        "body": "Authenticaiton means confirming your own identity, whereas autuhorization means being allowed access to a system."
+    }
+]

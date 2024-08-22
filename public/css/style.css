@@ -1,0 +1,63 @@
+* {
+    font-family: monospace, monospace;
+}
+
+h1 {
+    font-family: monospace, monospace;
+    font-size: 48px;
+    margin-bottom: 10px;  
+}
+
+p, h2, label, button, h3 {
+    font-family: monospace, monospace;
+}
+
+.blog-post {
+    border: solid, black, 3px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.form {
+    border: solid, black, 3px;
+    padding: 5px;
+    margin: 5px;
+}
+
+button {
+    margin: 5px;
+    background-color: greenyellow;
+}
+
+#single-post {
+    border: solid, black, 3px;
+    padding: 5px;
+    margin: 5px;
+}
+
+#post-form {
+    border: solid, black, 3px;
+    padding: 10px;
+    margin: 5px;
+}
+
+#add-comment {
+    border: solid, black, 3px;
+    padding: 10px;
+    margin: 5px;
+}
+
+a {
+    font-family: monospace, monospace;
+    color: rgb(26, 26, 26);
+}
+
+a:hover {
+    color: rgb(122, 180, 35);
+}
+
+.comment-render {
+    border: solid, black, 3px;
+    padding: 10px;
+    margin: 5px;
+}

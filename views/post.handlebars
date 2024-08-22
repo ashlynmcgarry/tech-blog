@@ -1,0 +1,49 @@
+<div class="text-center" id="single-post">
+  {{#if logged_in}}
+    <h2>{{post.title}}</h2>
+    <p>{{post.body}}</p>
+    <p>Created by {{post.user.username}}</p>
+  </div>
+  <div id="add-comment">
+    <h3>Add a new comment!</h3>
+<div>
+<form class="comment-form">
+    <label for="comment">Comment</label>
+    <input class="form-input" type="text" id="comment" name="comment" />
+    <button type="submit">Submit</button>
+</form>
+</div>
+</div>
+  {{else}}
+  <a href="/login"><button>Login to see Blogs</button></a>
+  {{/if}}  
+  {{!-- <h2>{{post.title}}</h2>
+  <p>{{post.body}}</p>
+  <p>Created by {{post.user.username}}</p> --}}
+</div>
+{{!-- <div>
+    <a href="/comment">
+    <button id="comment">Add Comment</button>
+    </a>
+    
+</div> --}}
+
+{{!-- comments need to render in here --}}
+{{#each post.comments as |comment|}}
+<div class="comment-render">
+  {{comment.body}}
+  <p>Posted by</p>{{comment.user.username}}
+  {{/each}}
+</div>
+
+{{!-- <div id="add-comment">
+  <h3>Add a new comment!</h3>
+<div>
+<form class="comment-form">
+    <label for="comment">Comment</label>
+    <input class="form-input" type="text" id="comment" name="comment" />
+    <button type="submit">Submit</button>
+</form>
+</div>
+</div> --}}
+<script src="/js/comment.js"></script>
